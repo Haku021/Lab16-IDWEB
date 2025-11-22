@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Contador Interactivo</h1>
-        
-        <div class="contador">
-            <button id="Menos">−</button>
-            <span id="valor">0</span>
-            <button id="Mas">+</button>
+<div class="container">
+        <h1>Mi Lista Dinámica</h1>
+        <div class="input-group">
+            <input type="text" id="inputTexto" placeholder="Escribe algo ...">
+            <button class="btn-add" id="btnAgregar">Agregar</button>
         </div>
+        <button class="btn-delete" id="btnEliminar" disabled>
+            Eliminar ultimo elemento
+        </button>
+        <ul id="miLista"></ul>
         
-        <p id="mensaje"></p>
-    <script src="ejercicio4.js"></script>
+        <div class="counter" id="contador">0 elementos en la lista</div>
+    </div>
+    <script src="ejercicio5.js"></script>
 </body>
 </html>

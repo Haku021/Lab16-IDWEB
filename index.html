@@ -8,23 +8,25 @@
 </head>
 <body>
 <div class="container">
-        <h1>Galeria de Imagenes</h1>
+    <div class="📊 Tabla Dinámica de Productos</h1>
 
-        <div class="main-display">
-            <div class="main-image-container">
-                <img id="imagenPrincipal" src="recurs/cortis.jpg" alt="Imagen principal">
-            </div>
-            <div class="image-info">
-                <div class="image-title" id="imagenTitulo">Keonho</div>
-                <div class="image-description" id="imagenDescripcion">Haz click para ver más imágenes</div>
-            </div>
+        <div class="controls">
+            <button class="btn-generar" onclick="generarTabla()">
+                 Generar Tabla
+            </button>
+            <button class="btn-agregar" onclick="agregarProducto()">
+                 Agregar Producto
+            </button>
+            <button class="btn-limpiar" onclick="limpiarTabla()">
+                Limpiar Tabla
+            </button>
         </div>
 
-        <div class="thumbnails-container">
-            <div class="thumbnails-title">Selecciona una imagen</div>
-            <div class="thumbnails-grid" id="galeriaThumbnails"></div>
+        <div id="tablaContainer">
+            <div class="empty-message">
+                Presiona "Generar Tabla" para mostrar los productos
+            </div>
         </div>
     </div>
-    <script src="ejercicio7.js"></script>
 </body>
 </html>
